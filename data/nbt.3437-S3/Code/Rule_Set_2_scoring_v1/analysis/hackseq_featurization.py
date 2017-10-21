@@ -43,7 +43,8 @@ if __name__ == '__main__':
                          Y=feature_df,
                          gene_position=feature_df)
     inputs, dim, dimsum, feature_names = concatenate_feature_sets(features)
-    np.save("../../../../c_elegans_features.npy", inputs)
 
-    with open("../../../../c_elegans_names.txt", "w+") as feature_file:
-        feature_file.writelines(["{}\n".format(feature) for feature in feature_names])
+    doensch_df = pd.DataFrame(inputs, columns=feature_names)
+    feature_df = feature_df.join(doensch_df)
+
+    feature_df.to_csv("../../../../../results/featurized_c_elegans_30mers.csv")

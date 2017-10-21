@@ -17,7 +17,6 @@ if __name__ == "__main__":
     c_elegans_df["Cas9Form"] = c_elegans_df["Cas9Form"].str.upper()
     c_elegans_df["Experimenter"] = c_elegans_df["Experimenter"].apply(str)
 
-
     c_elegans_df["GuideSoftware"] = ['Yes' if cell not in ("Yes", "No") else cell 
         for cell in c_elegans_df["GuideSoftware"]]
 
