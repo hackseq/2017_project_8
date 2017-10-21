@@ -11,7 +11,7 @@ learn_options = {"V": 2,
                  'include_pi_nuc_feat': True,
                  "gc_features": True,
                  "nuc_features": True,
-                 "include_gene_position": True,
+                 "include_gene_position": False,
                  "include_NGGX_interaction": True,
                  "include_Tm": True,
                  "include_strand": False,
@@ -36,13 +36,15 @@ learn_options = {"V": 2,
                  }
 
 if __name__ == '__main__':
-    feature_df = pd.read_csv("../../../../../results/cleaned_c_elegans.csv")
+    feature_df = pd.read_csv("../../../../../results/cleaned_c_elegans_30mers.csv")
+
     features = featurize_data(feature_df,
                          learn_options=learn_options,
                          Y=feature_df,
                          gene_position=feature_df)
     inputs, dim, dimsum, feature_names = concatenate_feature_sets(features)
-    np.save("../../../../hackseq_features.npy", inputs)
 
-    with open("../../../../feature_names.txt", "w+") as feature_file:
-        feature_file.writelines(["{}\n".format(feature) for feature in feature_names])
+    doensch_df = pd.DataFrame(inputs, columns=feature_names)
+    feature_df = feature_df.join(doensch_df)
+
+    feature_df.to_csv("../../../../../results/featurized_c_elegans_30mers.csv")
