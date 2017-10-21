@@ -36,7 +36,7 @@ learn_options = {"V": 2,
                  }
 
 if __name__ == '__main__':
-    feature_df = pd.read_csv("../../../../stable16corrected.csv")
+    feature_df = pd.read_csv("../../../../../results/cleaned_c_elegans.csv")
     features = featurize_data(feature_df,
                          learn_options=learn_options,
                          Y=feature_df,

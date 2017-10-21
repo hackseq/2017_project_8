@@ -1,4 +1,4 @@
-Timestamp,sgRNA,GeneTarget,GuideSoftware,Success,WormsInjected,SuccessfulInjections,InjectorExperienceLevel,DNA,Promoter,Cas9Form,ScreeningMethod,RepairMechanism,Comments,SuccessRate,sgRNAlength
+Timestamp,30mer,GeneTarget,GuideSoftware,Success,WormsInjected,SuccessfulInjections,InjectorExperienceLevel,DNA,Promoter,Cas9Form,ScreeningMethod,RepairMechanism,Comments,SuccessRate,sgRNAlength
 17/02/2017 19:35:11,GATTCTCGCGATAACCACGGTGG,rde-12,No,Yes,160,95.0,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,NHEJ,,0.59375,23
 17/02/2017 19:40:03,GGACATTGACACTAAAATCAAGG,dpy-13,No,Yes,40,1.0,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,PCR and/or DNA sequencing,NHEJ,,0.025,23
 17/02/2017 19:43:10,GTTATGAAGCTGACGGCGGACGG,dpy-13,No,Yes,35,3.0,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,phenotypic analysis,NHEJ,,0.0857142857143,23
