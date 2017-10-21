@@ -225,7 +225,7 @@ def setup(test=False, order=1, learn_options=None, data_file=None):
 
     assert "testing_non_binary_target_name" in learn_options.keys(), "need this in order to get metrics, though used to be not needed, so you may newly see this error"
     if learn_options["testing_non_binary_target_name"] not in ['ranks', 'raw', 'thrs']:
-        raise Exception('learn_otions["testing_non_binary_target_name"] must be in ["ranks", "raw", "thrs"]')
+        raise Exception('learn_options["testing_non_binary_target_name"] must be in ["ranks", "raw", "thrs"]')
 
     Xdf, Y, gene_position, target_genes = load_data.from_file(data_file, learn_options)
     learn_options['all_genes'] = target_genes
@@ -241,7 +241,7 @@ def setup(test=False, order=1, learn_options=None, data_file=None):
 
 def run_models(models, orders, GP_likelihoods=['gaussian', 'warped'], WD_kernel_degrees=[3], 
                adaboost_learning_rates=[0.1], adaboost_num_estimators=[100], adaboost_max_depths=[3], 
-               adaboost_CV=False, learn_options_set=None, test=False, CV=True):
+               adaboost_CV=False, learn_options_set=None, test=False, CV=True, data_file = None):
 
 
     results = {}
@@ -268,7 +268,10 @@ def run_models(models, orders, GP_likelihoods=['gaussian', 'warped'], WD_kernel_
             if model in feat_models_short.keys():
                 for order in orders:
                     print "running %s, order %d for %s" % (model, order, learn_options_str)
-                    Y, feature_sets, target_genes, learn_options, num_proc = setup(test=test, order=order, learn_options=partial_learn_opt) # TODO precompute features for all orders, as this is repated for each model                                        
+                    Y, feature_sets, target_genes, learn_options, num_proc = setup(test=test,
+                                                                                   order=order,
+                                                                                   learn_options=partial_learn_opt,
+                                                                                   data_file=data_file) # TODO precompute features for all orders, as this is repated for each model
 
                     if model == 'L1':
                         learn_options_model = L1_setup(copy.deepcopy(learn_options))
@@ -375,8 +378,9 @@ def save_final_model_V3(filename=None, include_position=True):
     assert filename is not None, "need to provide filename to save final model"
 
     if include_position:
-        learn_options = {"V": 3,               
-                    'train_genes': load_data.get_V3_genes(), 'test_genes': load_data.get_V3_genes(),
+        learn_options = {"V": 2,
+                    "train_genes": load_data.get_V2_genes("../../../../stable16modified.xlsx"),
+                    # 'test_genes': load_data.get_V3_genes(),
                     "testing_non_binary_target_name": 'ranks',
                     'include_pi_nuc_feat': True,
                     "gc_features": True,
@@ -400,8 +404,9 @@ def save_final_model_V3(filename=None, include_position=True):
                     'normalize_features': False,
                     }
     else:
-        learn_options = {"V": 3,               
-            'train_genes': load_data.get_V3_genes(), 'test_genes': load_data.get_V3_genes(),
+        learn_options = {"V": 2,
+            'train_genes': load_data.get_V3_genes(),
+                         # 'test_genes': load_data.get_V3_genes(),
             "testing_non_binary_target_name": 'ranks',
             'include_pi_nuc_feat': True,
             "gc_features": True,
@@ -430,7 +435,7 @@ def save_final_model_V3(filename=None, include_position=True):
     results, all_learn_options = run_models(["AdaBoost"], orders=[2], adaboost_learning_rates=[0.1], 
                                             adaboost_max_depths=[3], adaboost_num_estimators=[100], 
                                             adaboost_CV=False, learn_options_set=learn_options_set, 
-                                            test=test, CV=False)
+                                            test=test, CV=False, data_file=learn_options["train_genes"])
     model = results.values()[0][3][0]
         
     with open(filename, 'wb') as f:
@@ -568,8 +573,8 @@ if __name__ == '__main__':
                 }
 
         learn_options_gene = {"V": 3,
-                "train_genes":  load_data.get_V3_genes(),
-                "test_genes": load_data.get_V3_genes(),
+                "train_genes":  load_data.get_V2_genes("../../../../stable16modified.xlsx"),
+                # "test_genes": load_data.get_V3_genes(),
                 "testing_non_binary_target_name": 'ranks',
                 'include_pi_nuc_feat': True,
                 "gc_features": True,

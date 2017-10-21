@@ -151,7 +151,10 @@ def read_V2_data(data_file, learn_options=None, verbose=True):
     # import predict as pr; a1, g1, t1, X1, Y1 = pr.data_setup()
     # a1.index.names
 
-    data = pandas.read_excel(data_file, sheetname="ResultsFiltered", skiprows=range(0, 6+1), index_col=[0, 4])
+    data = pandas.read_csv(data_file
+                           # index_col=['30mer', 'Target gene']
+                           )
+    pass
     # grab data relevant to each of three drugs, which exludes some genes
     # note gene MED12 has two drugs, all others have at most one
     Xdf = pandas.DataFrame()
