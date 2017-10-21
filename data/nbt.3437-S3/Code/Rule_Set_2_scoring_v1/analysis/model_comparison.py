@@ -539,8 +539,8 @@ if __name__ == '__main__':
              # plt.close('all')
     else :
         learn_options = {"V": 3,
-                "train_genes":  load_data.get_V3_genes(),
-                "test_genes": load_data.get_V3_genes(),
+                "train_genes":  load_data.get_V2_genes("../../../../stable16modified.xlsx"),
+                # "test_genes": load_data.get_V3_genes(),
                 "testing_non_binary_target_name": 'ranks',
                 'include_pi_nuc_feat': True,
                 "gc_features": True,
