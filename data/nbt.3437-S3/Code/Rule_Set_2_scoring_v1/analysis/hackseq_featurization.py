@@ -1,5 +1,8 @@
 import pandas as pd
 from features.featurization import featurize_data
+from util import concatenate_feature_sets
+import numpy as np
+
 
 learn_options = {"V": 2,
                  # "train_genes": load_data.get_V2_genes("../../../../stable16corrected.csv"),
@@ -25,6 +28,8 @@ learn_options = {"V": 2,
                  "include_drug": False,
                  "include_sgRNAscore": False,
                  'adaboost_loss': 'ls',
+                 'include_known_pairs': False,
+                 'include_microhomology': False, # Hackseq: Someone could attempt to get this working
                  # main "ls", alternatives: "lad", "huber", "quantile", see scikit docs for details
                  'adaboost_alpha': 0.5,  # this parameter is only used by the huber and quantile loss functions.
                  'normalize_features': False,
@@ -32,7 +37,12 @@ learn_options = {"V": 2,
 
 if __name__ == '__main__':
     feature_df = pd.read_csv("../../../../stable16corrected.csv")
-    print(featurize_data(feature_df,
+    features = featurize_data(feature_df,
                          learn_options=learn_options,
                          Y=feature_df,
-                         gene_position=feature_df))
+                         gene_position=feature_df)
+    inputs, dim, dimsum, feature_names = concatenate_feature_sets(features)
+    np.save("../../../../hackseq_features.npy", inputs)
+
+    with open("../../../../feature_names.txt", "w+") as feature_file:
+        feature_file.writelines(["{}\n".format(feature) for feature in feature_names])
