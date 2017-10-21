@@ -379,7 +379,7 @@ def save_final_model_V3(filename=None, include_position=True):
 
     if include_position:
         learn_options = {"V": 2,
-                    "train_genes": load_data.get_V2_genes("../../../../stable16modified.xlsx"),
+                    "train_genes": load_data.get_V2_genes("../../../../stable16corrected.csv"),
                     # 'test_genes': load_data.get_V3_genes(),
                     "testing_non_binary_target_name": 'ranks',
                     'include_pi_nuc_feat': True,
@@ -435,7 +435,7 @@ def save_final_model_V3(filename=None, include_position=True):
     results, all_learn_options = run_models(["AdaBoost"], orders=[2], adaboost_learning_rates=[0.1], 
                                             adaboost_max_depths=[3], adaboost_num_estimators=[100], 
                                             adaboost_CV=False, learn_options_set=learn_options_set, 
-                                            test=test, CV=False, data_file=learn_options["train_genes"])
+                                            test=test, CV=False, data_file="../../../../stable16corrected.csv")
     model = results.values()[0][3][0]
         
     with open(filename, 'wb') as f:
@@ -544,7 +544,7 @@ if __name__ == '__main__':
              # plt.close('all')
     else :
         learn_options = {"V": 3,
-                "train_genes":  load_data.get_V2_genes("../../../../stable16modified.xlsx"),
+                "train_genes":  load_data.get_V2_genes("../../../../stable16corrected.csv"),
                 # "test_genes": load_data.get_V3_genes(),
                 "testing_non_binary_target_name": 'ranks',
                 'include_pi_nuc_feat': True,
@@ -572,8 +572,8 @@ if __name__ == '__main__':
                 'normalize_features': False
                 }
 
-        learn_options_gene = {"V": 3,
-                "train_genes":  load_data.get_V2_genes("../../../../stable16modified.xlsx"),
+        learn_options_gene = {"V": 2,
+                "train_genes":  load_data.get_V2_genes("../../../../stable16corrected.csv"),
                 # "test_genes": load_data.get_V3_genes(),
                 "testing_non_binary_target_name": 'ranks',
                 'include_pi_nuc_feat': True,
