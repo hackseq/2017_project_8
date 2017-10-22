@@ -48,4 +48,17 @@ if __name__ == '__main__':
     doensch_df = pd.DataFrame(inputs, columns=feature_names)
     feature_df = feature_df.join(doensch_df)
 
-    feature_df.to_csv("../../../../../results/featurized_c_elegans_30mers.csv")
+    feature_df = feature_df.drop(axis=1, labels=['sgRNA', 'Gene target', '30mer', 'WormsInjected', 'SuccessfulInjections'])
+    feature_df = pd.get_dummies(feature_df).dropna(axis=0)
+    feature_df = feature_df.rename(columns={"SuccessRate": "target"})
+
+
+    print(feature_df.shape)
+
+    cols = feature_df.columns.tolist()
+    cols.append(cols.pop(cols.index('target')))
+    feature_df = feature_df.reindex(columns=cols)
+
+    print(feature_df.columns.tolist()[-1])
+
+    feature_df.to_csv("../../../../../results/dummied_c_elegans_30mers.csv")
