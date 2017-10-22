@@ -1,9 +1,72 @@
 name: hackseq_2017
 channels:
-- https://repo.continuum.io/pkgs/free/linux-64/
+- bioconda
+- conda-forge
 - defaults
 dependencies:
-- biopython=1.67=np110py27_0
+- biopython=1.70=np112py27_1
+- bleach=1.4.2=py27_0
+- mmtf-python=1.0.2=py27_0
+- backports=1.0=py27_1
+- backports.shutil_get_terminal_size=1.0.0=py_3
+- backports_abc=0.5=py27_0
+- blas=1.1=openblas
+- configparser=3.5.0=py27_0
+- decorator=4.1.2=py27_0
+- entrypoints=0.2.3=py27_1
+- enum34=1.1.6=py27_1
+- gmp=6.1.2=0
+- html5lib=0.999999999=py27_0
+- ipykernel=4.6.1=py27_0
+- ipython=5.5.0=py27_0
+- ipython_genutils=0.2.0=py27_0
+- ipywidgets=7.0.1=py_2
+- jinja2=2.9.6=py27_0
+- jsonschema=2.6.0=py27_0
+- jupyter=1.0.0=py27_0
+- jupyter_client=5.1.0=py27_0
+- jupyter_console=5.2.0=py27_0
+- jupyter_core=4.3.0=py27_0
+- libsodium=1.0.10=0
+- markupsafe=1.0=py27_0
+- mistune=0.7.4=py27_0
+- msgpack-python=0.4.8=py27_0
+- nbconvert=5.3.1=py_1
+- nbformat=4.4.0=py27_0
+- notebook=5.2.0=py27_1
+- numpy=1.12.1=py27_blas_openblas_200
+- openblas=0.2.19=2
+- pandas=0.20.3=py27_1
+- pandoc=1.19.2=0
+- pandocfilters=1.4.1=py27_0
+- pathlib2=2.3.0=py27_0
+- patsy=0.4.1=py27_0
+- pexpect=4.2.1=py27_0
+- pickleshare=0.7.4=py27_0
+- prompt_toolkit=1.0.15=py27_0
+- ptyprocess=0.5.2=py27_0
+- pygments=2.2.0=py27_0
+- pyqt=5.6.0=py27_4
+- pyzmq=16.0.2=py27_2
+- qtconsole=4.3.1=py27_0
+- scandir=1.6=py27_0
+- scikit-learn=0.19.0=py27_blas_openblas_201
+- scipy=0.19.1=py27_blas_openblas_202
+- seaborn=0.8.1=py27_0
+- simplegeneric=0.8.1=py27_0
+- singledispatch=3.4.0.3=py27_0
+- ssl_match_hostname=3.5.0.1=py27_1
+- statsmodels=0.8.0=py27_0
+- terminado=0.6=py27_0
+- testpath=0.3.1=py27_0
+- tornado=4.5.2=py27_0
+- traitlets=4.3.2=py27_0
+- wcwidth=0.1.7=py27_0
+- webencodings=0.5=py27_0
+- widgetsnbextension=3.0.3=py27_2
+- xgboost=0.6a2=py27_2
+- xlrd=1.0.0=py27_1
+- zeromq=4.2.1=1
 - cairo=1.14.8=0
 - certifi=2016.2.28=py27_0
 - cycler=0.10.0=py27_0
@@ -20,32 +83,29 @@ dependencies:
 - jpeg=9b=0
 - libffi=3.2.1=1
 - libgcc=5.2.0=0
-- libgfortran=1.0=0
+- libgfortran=3.0.0=1
 - libiconv=1.14=0
 - libpng=1.6.30=1
 - libxcb=1.12=1
+- libxgboost=0.60=hdfa14d8_0
 - libxml2=2.9.4=0
-- matplotlib=1.5.1=np110py27_0
+- matplotlib=2.0.2=np112py27_0
 - mkl=2017.0.3=0
 - nose=1.3.7=py27_1
-- numpy=1.10.2=py27_0
-- openblas=0.2.14=3
 - openssl=1.0.2l=0
-- pandas=0.18.1=np110py27_0
 - pango=1.40.3=1
 - pcre=8.39=1
 - pip=9.0.1=py27_1
 - pixman=0.34.0=0
+- py-xgboost=0.60=py27np112h0aae3cd_0
 - pycairo=1.10.0=py27_0
 - pyparsing=2.2.0=py27_0
-- pyqt=4.11.4=py27_4
 - python=2.7.13=0
 - python-dateutil=2.6.1=py27_0
 - pytz=2017.2=py27_0
-- qt=4.8.7=4
+- qt=5.6.2=5
 - readline=6.2=2
-- scikit-learn=0.16.1=np110py27_0
-- scipy=0.16.0=np110py27_1
+- reportlab=3.2.0=py27_0
 - setuptools=36.4.0=py27_1
 - sip=4.18=py27_0
 - six=1.10.0=py27_0
@@ -54,5 +114,23 @@ dependencies:
 - tk=8.5.18=0
 - wheel=0.29.0=py27_0
 - zlib=1.2.11=0
-prefix: /home/deadhead/miniconda3/envs/hackseq_2017
+- pip:
+  - backports-abc==0.5
+  - backports.shutil-get-terminal-size==1.0.0
+  - backports.ssl-match-hostname==3.5.0.1
+  - chardet==3.0.4
+  - deap==1.0.2
+  - idna==2.6
+  - ipython-genutils==0.2.0
+  - jupyter-client==5.1.0
+  - jupyter-console==5.2.0
+  - jupyter-core==4.3.0
+  - prompt-toolkit==1.0.15
+  - requests==2.18.4
+  - stopit==1.1.1
+  - tpot==0.9.0
+  - tqdm==4.19.4
+  - update-checker==0.16
+  - urllib3==1.22
+prefix: /home/deadhand/anaconda3/envs/hackseq_2017
 
