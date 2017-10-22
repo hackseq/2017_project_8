@@ -197,13 +197,13 @@ def get_micro_homology_features(gene_names, learn_options, X):
             for j, ps in enumerate(guide_inds):
                 guide_seq = Seq.Seq(X['30mer'][ps])
                 strand = X['Strand'][ps]
-                if strand=='sense':              
+                if strand=='sense':
                     gene_seq = gene_seq.reverse_complement()
                 # figure out the sequence to the left and right of this guide, in the gene
-                ind = gene_seq.find(guide_seq)                        
+                ind = gene_seq.find(guide_seq)
                 if ind==-1:
                     gene_seq = gene_seq.reverse_complement()
-                    ind = gene_seq.find(guide_seq)                        
+                    ind = gene_seq.find(guide_seq)
                     #assert ind != -1, "still didn't work"
                     #print "shouldn't get here"
                 else:
@@ -229,20 +229,20 @@ def get_micro_homology_features(gene_names, learn_options, X):
                     #    right_win = right_win.reverse_complement()
                     assert len(left_win.tostring())==k_mer_length_left
                     assert len(right_win.tostring())==k_mer_length_right
-                                    
+
                     sixtymer = str(left_win) + str(guide_seq) + str(right_win)
                     assert len(sixtymer)==60, "should be of length 60"
                     mh_score, oof_score = microhomology.compute_score(sixtymer)
 
                 feat.ix[ps,"mh_score"] = mh_score
                 feat.ix[ps,"oof_score"] = oof_score
-            print "computed microhomology of %s" % (str(gene))           
-    
+            print "computed microhomology of %s" % (str(gene))
+
     return pandas.DataFrame(feat, dtype='float')
 
 
 def local_gene_seq_features(gene_names, learn_options, X):
-    
+
     print "building local gene sequence features"
     feat = pandas.DataFrame(index=X.index)
     feat["gene_left_win"] = ""
@@ -301,7 +301,7 @@ def gene_feature(Y, X, learn_options):
         seq = util.get_gene_sequence(gene)
         gene_length[gene_names.values==gene] = len(seq)
         gc_content[gene_names.values==gene] = SeqUtil.GC(seq)
-        temperature[gene_names.values==gene] = Tm.Tm_staluc(seq, rna=False)
+        temperature[gene_names.values==gene] = Tm.Tm_NN(seq, rna=False)
         molecular_weight[gene_names.values==gene] = SeqUtil.molecular_weight(seq, 'DNA')
 
     all = np.concatenate((gene_length, gc_content, temperature, molecular_weight), axis=1)
@@ -397,10 +397,10 @@ def apply_nucleotide_features(seq_data_frame, order, num_proc, include_pos_indep
             feat_pd_tmp, feat_pi_tmp = nucleotide_features(s, order, include_pos_independent, max_index_to_use, prefix=prefix)
             feat_pd = pandas.concat([feat_pd,feat_pd_tmp], axis=1)
             feat_pi = pandas.concat([feat_pi,feat_pi_tmp], axis=1)
-        
+
         feat_pd = feat_pd.T
-        feat_pi = feat_pi.T  
-    
+        feat_pi = feat_pi.T
+
     return feat_pd, feat_pi
 
 
@@ -435,10 +435,10 @@ def nucleotide_features(s, order, include_pos_independent, max_index_to_use, pre
                 return pandas.Series(features_pos_dependent,index=index_dependent), pandas.Series(features_pos_independent,index=index_independent)
             else:
                 return pandas.Series(features_pos_independent, index=index_independent)
-    
+
     if np.any(np.isnan(features_pos_dependent)): raise Exception("found nan features in features_pos_dependent")
     if np.any(np.isnan(features_pos_independent)): raise Exception("found nan features in features_pos_independent")
-    
+
     return pandas.Series(features_pos_dependent, index=index_dependent)
 
 
