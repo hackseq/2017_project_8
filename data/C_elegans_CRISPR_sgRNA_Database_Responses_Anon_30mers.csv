@@ -53,14 +53,13 @@ Experimenter number,"sgRNA sequence(s) (if you injected more that one sgRNA, ple
 5,GACTTTTTGATTCTAACTGC,43,AVR-15,ACCTGACTTTTTGATTCTAACTGCTGGACA,31,No,Yes,88,1,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
 5,GTGCACCAGTAAAACGAACAC,43,AVR-15,ATATTGCACCAGTAAAACGAACACGGGATC,31,No,Yes,88,1,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
 5,GACGTGTATTCTGTGTCAAG,43,UBR-1,CATTGACGTGTATTCTGTGTCAAGAGGATG,31,No,Yes,89,1,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
-5,GTGCAAACGATTGTCGAATGG,43,UBR-1,CCGTTGTGCAAACGATTGTCGAATGCGGCG,31,No,Yes,89,1,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
 4,TGTATCCGTTTCTTCAGTTG,42,NSPC-1 TO NSPC-7,AAAATGTATCCGTTTCTTCAGTTGTGGCAC,31,Yes,Yes,88,6,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
 4,TAGTAAAGAGCAATTCAAGGC,42,NSPC-1 TO NSPC-7,ATTGAGTAAAGAGCAATTCAAGGCCGGTGA,31,Yes,Yes,88,6,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
 4,AATTTGAATATGCGCGGCAA,20,Y79H2A.4,TGAAAATTTGAATATGCGCGGCAAAGGTCA,30,Yes,Yes,28,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
 4,GGCAAACCCGGCTCACATCA,20,T08B6.5,ACATGGCAAACCCGGCTCACATCAAGGAGT,30,Yes,Yes,36,4,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
 4,CATAACTCGAGAATTCTGTA,42,EIF-3.G,AGAGCATAACTCGAGAATTCTGTAAGGCGA,31,Yes,Yes,73,2,3,RNA,,Protein,Positive selectable markers,HR
 4,GAGTTCTGCAATTGCACGGG,42,EIF-3.G,CATTGAGTTCTGCAATTGCACGGGCGGCGT,31,Yes,Yes,73,2,3,RNA,,Protein,Positive selectable markers,HR
-4,AGTTTAATAAGCGCTGCCGG,42,SRG-3 TO SRG-8,GTATAAGTTTAATAAGCGCTGCCGGAGGAA,31,Yes,Yes,38,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
+4,AGTTTAATAAGCGCTGCCGG,42,SRG-3 TO SRG-8,TATAAGTTTAATAAGCGCTGCCGGAGGAAA,31,Yes,Yes,38,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
 4,CTAATCTTGTAGAAGTGTGT,42,SRG-3 TO SRG-8,TGTACTAATCTTGTAGAAGTGTGTGGGTGA,31,Yes,Yes,38,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
 5,TCTTCTGAAATGGGGCGTGA,20,R08A2.2,AGCATCTTCTGAAATGGGGCGTGACGGATG,30,Yes,Yes,27,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
 5,CGTCTCCCGCTGCAACGAGA,20,W04C9.5,CCAGCGTCTCCCGCTGCAACGAGAAGGTAT,30,Yes,Yes,37,0,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR
