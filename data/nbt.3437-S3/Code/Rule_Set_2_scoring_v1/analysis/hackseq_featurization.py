@@ -52,34 +52,31 @@ def get_proximal_5mer_feature(data_df):
 
 
 if __name__ == '__main__':
-    feature_df = pd.read_csv("../../../../../results/melted_hackseq_energy.csv")
+    feature_df = pd.read_csv("../../../../../results/cleaned_c_elegans_30mers_energies.csv")
 
+    features = featurize_data(feature_df,
+                         learn_options=learn_options,
+                         Y=feature_df,
+                         gene_position=feature_df)
 
-    # features = featurize_data(feature_df,
-    #                      learn_options=learn_options,
-    #                      Y=feature_df,
-    #                      gene_position=feature_df)
+    features['proximal_5mer'] = get_proximal_5mer_feature(feature_df)
+    inputs, dim, dimsum, feature_names = concatenate_feature_sets(features)
 
-    proximal_df = get_proximal_5mer_feature(feature_df)
-    # inputs, dim, dimsum, feature_names = concatenate_feature_sets(features)
-    feature_df = pd.concat([feature_df.reset_index(drop=True),
-               proximal_df.reset_index(drop=True)], axis=1)
-    # doensch_df = pd.DataFrame(inputs, columns=feature_names)
-    # feature_df = feature_df.join(doensch_df)
-    feature_df = feature_df.drop(axis=1, labels=['30mer', 'Transcript'])
-
+    doensch_df = pd.DataFrame(inputs, columns=feature_names)
+    feature_df = feature_df.join(doensch_df)
+    feature_df = feature_df.drop(axis=1, labels=['sgRNA', 'Gene target', '30mer', 'WormsInjected', 'SuccessfulInjections'])
     feature_df = pd.get_dummies(feature_df).dropna(axis=0)
-    # if any(feature_df.columns.duplicated()):
-    #     feature_df = feature_df.loc[:, ~feature_df.columns.duplicated()]
+    if any(feature_df.columns.duplicated()):
+        feature_df = feature_df.loc[:, ~feature_df.columns.duplicated()]
 
-    # feature_df = feature_df.rename(columns={"lfc": "target"})
+    feature_df = feature_df.rename(columns={"SuccessRate": "target"})
 
     print(feature_df.shape)
 
     cols = feature_df.columns.tolist()
-    cols.append(cols.pop(cols.index('lfc')))
+    cols.append(cols.pop(cols.index('target')))
     feature_df = feature_df.reindex(columns=cols)
 
     print(feature_df.columns.tolist()[-1])
 
-    feature_df.to_csv("../../../../../results/dummied_doench_30mers_w_additional_features.csv")
+    feature_df.to_csv("../../../../../results/dummied_c_elegans_30mers_w_additional_features.csv")
