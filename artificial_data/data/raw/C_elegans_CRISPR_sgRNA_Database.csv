@@ -1,0 +1,74 @@
+sgRNA,target_name,website_source,sgRNA_cut,F1_worms,num_worms,num_lines,experience,sgRNA_type,promoter_used,cas9_type,screening_method,repair_mechanism,comments
+GATTCTCGCGATAACCACGGTGG,rde-12,No,Yes,,160,95,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,NHEJ,
+GGACATTGACACTAAAATCAAGG,dpy-13,No,Yes,,40,1,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,PCR and/or DNA sequencing,NHEJ,
+GTTATGAAGCTGACGGCGGACGG,dpy-13,No,Yes,,35,3,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,phenotypic analysis,NHEJ,
+GGCAATGCTGAGTGACACGGTGG,dpy-7,No,Yes,,300,240,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,phenotypic analysis,NHEJ,
+GCTACCATAGGCACCACGAGCGG,dpy-10,No,Yes,,250,246,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,phenotypic analysis,NHEJ,
+GTTAGTGGTAGACTTCTTGGTGG,dpy-6,No,Yes,360,120,11,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,phenotypic analysis ,NHEJ,
+GAAATTGAAGCAACAGTGGGCGG,dpy-6,No,Yes,219,90,13,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,phenotypic analysis,NHEJ,
+GACTAAAATGTGAACGTATGAGG,rde-8,No,Yes,25,25,6,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,rde phenotypic analysis,NHEJ,
+GCTACCATAGGCACCACGAGCGG,dpy-10,No,Yes,1109,350,246,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,phenotypic analysis,NHEJ,
+AGGGATACTGGACAAATTGTGG,cdkl-1,http://crispr.mit.edu/,Yes,,20,1,1,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,PCR and/or DNA sequencing,HR,
+CAGTACAATCAGGGACGTCACGG,pat-2,crispr.mit.edu,Yes,,45,2,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+CGAGAACCCAATCTACAAACAGG,pat-3,crispr.mit.edu,Yes,,45,1,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+atgatgaatgataacgaat,mei-1,No,Yes,,51,1,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,GFP fluorescence,HR,
+actggaaaggaaattgagc,ned-8,No,No,,137,,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+taatggagtaccggcactc,mel-26,No,No,,132,,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,GFP fluorescence,HR,
+acggattgttcggatatcg,cul-3,No,Yes,,83,1,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,GFP fluorescence,HR,
+GTACAAATGGCCACCTAAAA,aspm-1,No,Yes,,60,1,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,GFP fluorescence,HR,
+agtacataacctgtggacg,cul-2,No,Yes,,51,3,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,GFP fluoresence,HR,
+ggctttaaaatcaactcaccg,sas-7,No,Yes,,48,4,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,GFP fluorescence,HR,
+ggctttaaaatcaactcaccg,sas-7,No,Yes,,50,5,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,Co-CRISPR,NHEJ,
+cggtgttaaatctctactgg,sas-7,No,Yes,,50,5,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,Co-CRISPR,NHEJ,
+ggatcaattcgattctctaa,ani-1,No,Yes,,50,1,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,GFP fluorescence,HR,
+GTAGTCGTCGGATCACAGT,drp-1,No,Yes,,24,1,3,DNA,R07E5.16 U6 promoter (Dickinson et al. 2013),circular plasmid DNA,GFP fluorescence,HR,
+atgggaatcgtgagtatacg,ebp-2,No,Yes,,50,1,3,RNA,,protein,Co-CRISPR,HR,
+TGAGTAGATTCCACTTCCAC,apr-1`,No,No,,50,,3,RNA,,protein,Co-CRISPR,HR,
+AGGAGTTGGGAAAAGCGCAT,rap-3,Yes,Yes,,42,9,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,Only 3 of the 8 'successful cuts' had the cassette inserted correctly (by PCR validation)
+gtgaattttctagATCTTGG,C52B11.5,Yes,Yes,,30,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+GTACCTGTGCCTGAACCAAC,pqn-82,Yes,No,,67,,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+TGAAATGAATGCTCCGATAA,C25A6.1,Yes,No,,26,,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+cttcaaaacctatagattgt,C25E10.12,Yes,No,,29,,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+cagCAGCCAATTGTACTTGT,T26C12.3,Yes,Yes,,19,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+CCTCTGCTCCATCGTCTTCG,flp-32,Yes,No,,22,,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+CCTCTGCTCCATCGTCTTCG,flp-32,Yes,Yes,,28,1,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+CGTCCAAAGAGCCTTGCAGG,flp-8,Yes,Yes,,21,1,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+GAGATAATCGCGGTGCACGG,K01G5.9,Yes,Yes,,25,1,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+gcgagagacaaccggaaaag,Y67D8C.3,Yes,Yes,,32,1,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+CCTGGGAAGACCTTTGAAGC,kin-24,Yes,No,,27,,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+CCTGGGAAGACCTTTGAAGC,kin-24,Yes,Yes,,20,1,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+tcttcacgaatcttcagctg,Y67D8C.3,Yes,Yes,,20,1,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+cacgaataatggagaatcgg,Y67D8C.3,Yes,No,,32,,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+tccccagtaaactcttccgg,pry-1,Yes,Yes,,46,5,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,"2 of the 'successful cuts' did not give the desired deletion, but the selection cassette was inserted into the genome"
+TCGATTGCTCCTGTTCTTTG,T22C1.1,Yes,Yes,,78,1,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+aacacgaaaaaattaagggg,Y54G2A.23,Yes,Yes,,76,3,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+AAATCATCTATCGGCTTTGG,F18F11.5,Yes,Yes,,57,1,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,"The 'successful cut' did not give the desired deletion, but the selection cassette was inserted into the genome"
+TATGTGATAATCGGAGACGG,F11A5.3,Yes,Yes,,21,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,"1 of the 'successful cuts' did not give the desired deletion, but the selection cassette was inserted into the genome"
+CTAAACGTCTGGGACATCGG,arl-3,Yes,Yes,,63,1,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,"The 'successful cut' did not give the desired deletion, but the selection cassette was inserted into the genome"
+gtaactattgtagaatattgg,unc-2,No,Yes,,37,1,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+GCTGAAATGTACAAAGAGGG,efk-1,Yes,Yes,,40,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+GGGGAATGAGAACGTAAAGG,F01D4.9,Yes,Yes,,41,1,2,RNA,,protein,Positive selectable markers,HR,
+GGGGAATGAGAACGTAAAGG,F01D4.9,Yes,Yes,,112,2,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+GATATTCCACGTGTGTGTGG,C16A11.10,No,Yes,,77,1,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,Position of inserted cassette not verified
+"gactttttgattctaactgc, gtgcaccagtaaaacgaacac",avr-15,No,Yes,,88,1,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,Position of inserted cassette not verified
+"gacgtgtattctgtgtcaag, gtgcaaacgattgtcgaatgg",ubr-1,No,Yes,,89,1,2,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,
+"tgtatccgtttcttcagttg, agtaaagagcaattcaaggc",nspc-1:7,Yes,Yes,,88,6,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,"Tandem gene deletion. 1 of the 'successful cuts' had a perfect integrant, the remaining lines were also integrants but the selection cassette was not inserted in the way we had intended."
+aatttgaatATGCGCGGCAA,Y79H2A.4,Yes,Yes,,28,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,Both integrants had the insertion but neither inserted in the way we had expected. 
+GGCAAACCCGGCTCACATCA,T08B6.5,Yes,Yes,,36,4,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,2 of the 4 integrants were perfect insertions. 
+"cataactcgagaattctgta, GAGTTCTGCAATTGCACGGG",eif-3.G,Yes,Yes,,73,2,3,RNA,,Protein,Positive selectable markers,HR,1 of the 2 integrants were perfect insertions.
+"agtttaataagcgctgccgg, ctaatcttgtagaagtgtgt",srg-3:8,Yes,Yes,,38,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,"Tandem gene deletion. 2 of 3 integrants were perfect insertions, other had WT band intact"
+TCTTCTGAAATGGGGCGTGA,R08A2.2,Yes,Yes,,27,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,1 of the 2 integrants were perfect insertions
+CGTCTCCCGCTGCAACGAGA,W04C9.5,Yes,Yes,,37,0,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,"3 of the 4 integrants had unsuccessful PCRs, in 1 of the 4 the DS did not have a successful PCR"
+gctgaatttcttgaagcgga,flp-9,Yes,Yes,,46,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,2 of 2 integrants were perfect insertions
+TGGGATCCAAGTAAATATCG,lgc-10,Yes,Yes,,19,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,1 of 2 integrants were perfect insertions
+gTTGATCCAACACAGCCTCT,lgc-15,Yes,Yes,,51,1,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,"1 of 2 integrants were perfect insertions, other had WT band intact"
+ACTTTATTACCTGAAGTTGG,lgc-17,Yes,Yes,,26,1,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,1 of 1 integrants were perfect insertions
+GAGAGAGGAGGCCGTGGAGG,rsp-4,Yes,Yes,,9,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,2 of 2 integrants were perfect insertions
+GAAATCGAAGAGCATTTTAA,EEED8.4,Yes,No,,30,0,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,No Integrants found
+GATGCCAAGTCTGTATTCAT,EEED8.12,Yes,Yes,,18,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,2 of 3 integrants were perfect insertions
+TATCGCCCAGTAAAATTGCT,lgc-31,Yes,Yes,,25,3,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,all 3 integrants were perfect insertions
+GCACGTTATCGATGGAGATC,C50B8.1,Yes,Yes,,23,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,2 of 3 integrants were perfect insertions
+GATTACTTGTCTCGTACCGG,C25A1.4,Yes,Yes,,32,1,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,1 of 5 integrants were perfect insertions
+TCCGATTCGAGTGGTTCACG; aaaccaatacgacccattct,lgc-45,Yes,Yes,,28,1,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,1 of 1 integrants were perfect insertions
+gtgaattttctagATCTTGG; TACAGAGTCGCAGATGTTGG,C52B11.5,Yes,Yes,,31,3,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,3 of 3 integrants were perfect insertions
+CGCCTATCAAGTCCTCCACC; agattttggttagatttcga,C34D4.2,Yes,Yes,,26,2,3,DNA,K09B11.12 U6 promoter (Friedland et al. 2013),circular plasmid DNA,Positive selectable markers,HR,2 of 2 integrants were perfect insertions
