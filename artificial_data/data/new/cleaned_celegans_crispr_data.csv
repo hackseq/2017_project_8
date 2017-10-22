@@ -1,0 +1,74 @@
+sgRNA-1,sgRNA-2,target_name,sgRNA_cut,num_worms,num_lines,sgRNA_type,promoter_used,cas9_type,screening_method,repair_mechanism
+GATTCTCGCGATAACCACGGTGG,,rde-12,Yes,160,95.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,NHEJ
+GGACATTGACACTAAAATCAAGG,,dpy-13,Yes,40,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,PCR and/or DNA sequencing,NHEJ
+GTTATGAAGCTGACGGCGGACGG,,dpy-13,Yes,35,3.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,phenotypic analysis,NHEJ
+GGCAATGCTGAGTGACACGGTGG,,dpy-7,Yes,300,240.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,phenotypic analysis,NHEJ
+GCTACCATAGGCACCACGAGCGG,,dpy-10,Yes,250,246.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,phenotypic analysis,NHEJ
+GTTAGTGGTAGACTTCTTGGTGG,,dpy-6,Yes,120,11.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,phenotypic analysis ,NHEJ
+GAAATTGAAGCAACAGTGGGCGG,,dpy-6,Yes,90,13.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,phenotypic analysis,NHEJ
+GACTAAAATGTGAACGTATGAGG,,rde-8,Yes,25,6.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,rde phenotypic analysis,NHEJ
+GCTACCATAGGCACCACGAGCGG,,dpy-10,Yes,350,246.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,phenotypic analysis,NHEJ
+AGGGATACTGGACAAATTGTGG,,cdkl-1,Yes,20,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,PCR and/or DNA sequencing,HR
+CAGTACAATCAGGGACGTCACGG,,pat-2,Yes,45,2.0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CGAGAACCCAATCTACAAACAGG,,pat-3,Yes,45,1.0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+ATGATGAATGATAACGAAT,,mei-1,Yes,51,1.0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,GFP fluorescence,HR
+ACTGGAAAGGAAATTGAGC,,ned-8,No,137,0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+TAATGGAGTACCGGCACTC,,mel-26,No,132,0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,GFP fluorescence,HR
+ACGGATTGTTCGGATATCG,,cul-3,Yes,83,1.0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,GFP fluorescence,HR
+GTACAAATGGCCACCTAAAA,,aspm-1,Yes,60,1.0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,GFP fluorescence,HR
+AGTACATAACCTGTGGACG,,cul-2,Yes,51,3.0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,GFP fluoresence,HR
+GGCTTTAAAATCAACTCACCG,,sas-7,Yes,48,4.0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,GFP fluorescence,HR
+GGCTTTAAAATCAACTCACCG,,sas-7,Yes,50,5.0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,Co-CRISPR,NHEJ
+CGGTGTTAAATCTCTACTGG,,sas-7,Yes,50,5.0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,Co-CRISPR,NHEJ
+GGATCAATTCGATTCTCTAA,,ani-1,Yes,50,1.0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,GFP fluorescence,HR
+GTAGTCGTCGGATCACAGT,,drp-1,Yes,24,1.0,DNA,R07E5.16 U6 promoter,circular plasmid DNA,GFP fluorescence,HR
+ATGGGAATCGTGAGTATACG,,ebp-2,Yes,50,1.0,RNA,0,protein,Co-CRISPR,HR
+TGAGTAGATTCCACTTCCAC,,apr-1,No,50,0,RNA,0,protein,Co-CRISPR,HR
+AGGAGTTGGGAAAAGCGCAT,,rap-3,Yes,42,9.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GTGAATTTTCTAGATCTTGG,,C52B11.5,Yes,30,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GTACCTGTGCCTGAACCAAC,,pqn-82,No,67,0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+TGAAATGAATGCTCCGATAA,,C25A6.1,No,26,0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CTTCAAAACCTATAGATTGT,,C25E10.12,No,29,0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CAGCAGCCAATTGTACTTGT,,T26C12.3,Yes,19,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CCTCTGCTCCATCGTCTTCG,,flp-32,No,22,0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CCTCTGCTCCATCGTCTTCG,,flp-32,Yes,28,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CGTCCAAAGAGCCTTGCAGG,,flp-8,Yes,21,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GAGATAATCGCGGTGCACGG,,K01G5.9,Yes,25,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GCGAGAGACAACCGGAAAAG,,Y67D8C.3,Yes,32,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CCTGGGAAGACCTTTGAAGC,,kin-24,No,27,0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CCTGGGAAGACCTTTGAAGC,,kin-24,Yes,20,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+TCTTCACGAATCTTCAGCTG,,Y67D8C.3,Yes,20,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CACGAATAATGGAGAATCGG,,Y67D8C.3,No,32,0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+TCCCCAGTAAACTCTTCCGG,,pry-1,Yes,46,5.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+TCGATTGCTCCTGTTCTTTG,,T22C1.1,Yes,78,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+AACACGAAAAAATTAAGGGG,,Y54G2A.23,Yes,76,3.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+AAATCATCTATCGGCTTTGG,,F18F11.5,Yes,57,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+TATGTGATAATCGGAGACGG,,F11A5.3,Yes,21,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CTAAACGTCTGGGACATCGG,,arl-3,Yes,63,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GTAACTATTGTAGAATATTGG,,unc-2,Yes,37,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GCTGAAATGTACAAAGAGGG,,efk-1,Yes,40,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GGGGAATGAGAACGTAAAGG,,F01D4.9,Yes,41,1.0,RNA,0,protein,Positive selectable markers,HR
+GGGGAATGAGAACGTAAAGG,,F01D4.9,Yes,112,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GATATTCCACGTGTGTGTGG,,C16A11.10,Yes,77,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GACTTTTTGATTCTAACTGC,GTGCACCAGTAAAACGAACAC,avr-15,Yes,88,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GACGTGTATTCTGTGTCAAG,GTGCAAACGATTGTCGAATGG,ubr-1,Yes,89,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+TGTATCCGTTTCTTCAGTTG,AGTAAAGAGCAATTCAAGGC,nspc-1:7,Yes,88,6.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+AATTTGAATATGCGCGGCAA,,Y79H2A.4,Yes,28,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GGCAAACCCGGCTCACATCA,,T08B6.5,Yes,36,4.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CATAACTCGAGAATTCTGTA,GAGTTCTGCAATTGCACGGG,eif-3.G,Yes,73,2.0,RNA,0,Protein,Positive selectable markers,HR
+AGTTTAATAAGCGCTGCCGG,CTAATCTTGTAGAAGTGTGT,srg-3:8,Yes,38,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+TCTTCTGAAATGGGGCGTGA,,R08A2.2,Yes,27,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CGTCTCCCGCTGCAACGAGA,,W04C9.5,Yes,37,0.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GCTGAATTTCTTGAAGCGGA,,flp-9,Yes,46,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+TGGGATCCAAGTAAATATCG,,lgc-10,Yes,19,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GTTGATCCAACACAGCCTCT,,lgc-15,Yes,51,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+ACTTTATTACCTGAAGTTGG,,lgc-17,Yes,26,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GAGAGAGGAGGCCGTGGAGG,,rsp-4,Yes,9,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GAAATCGAAGAGCATTTTAA,,EEED8.4,No,30,0.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GATGCCAAGTCTGTATTCAT,,EEED8.12,Yes,18,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+TATCGCCCAGTAAAATTGCT,,lgc-31,Yes,25,3.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GCACGTTATCGATGGAGATC,,C50B8.1,Yes,23,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GATTACTTGTCTCGTACCGG,,C25A1.4,Yes,32,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+TCCGATTCGAGTGGTTCACG,AAACCAATACGACCCATTCT,lgc-45,Yes,28,1.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+GTGAATTTTCTAGATCTTGG,TACAGAGTCGCAGATGTTGG,C52B11.5,Yes,31,3.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
+CGCCTATCAAGTCCTCCACC,AGATTTTGGTTAGATTTCGA,C34D4.2,Yes,26,2.0,DNA,K09B11.12 U6 promoter,circular plasmid DNA,Positive selectable markers,HR
