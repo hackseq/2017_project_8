@@ -35,6 +35,21 @@ learn_options = {"V": 2,
                  'normalize_features': False,
                  }
 
+def get_5mer(s):
+    assert len(s) == 30, "seems to assume 30mer"
+    return s[19:24]
+
+
+def get_proximal_5mer_feature(data_df):
+    proximal_5mer = data_df['30mer'].apply(get_5mer)
+    proximal_5mer.name = "proximal_5mers"
+    proximal_5mer = pd.DataFrame(proximal_5mer)
+
+    proximal_5mer_counts = proximal_5mer.groupby(["proximal_5mers"]).size().reset_index()
+    proximal_5mer = proximal_5mer.merge(proximal_5mer_counts, on="proximal_5mers")
+    proximal_5mer = proximal_5mer.rename(columns={0: 'proximal_5mer_counts'})
+    return proximal_5mer
+
 
 if __name__ == '__main__':
     feature_df = pd.read_csv("../../../../../results/cleaned_c_elegans_30mers.csv")
@@ -43,13 +58,17 @@ if __name__ == '__main__':
                          learn_options=learn_options,
                          Y=feature_df,
                          gene_position=feature_df)
+
+    features['proximal_5mer'] = get_proximal_5mer_feature(feature_df)
     inputs, dim, dimsum, feature_names = concatenate_feature_sets(features)
 
     doensch_df = pd.DataFrame(inputs, columns=feature_names)
     feature_df = feature_df.join(doensch_df)
-
     feature_df = feature_df.drop(axis=1, labels=['sgRNA', 'Gene target', '30mer', 'WormsInjected', 'SuccessfulInjections'])
     feature_df = pd.get_dummies(feature_df).dropna(axis=0)
+    if any(feature_df.columns.duplicated()):
+        feature_df = feature_df.loc[:,~feature_df.columns.duplicated()]
+
     feature_df = feature_df.rename(columns={"SuccessRate": "target"})
 
 
